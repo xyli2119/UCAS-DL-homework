@@ -1,0 +1,496 @@
+2024-06-17 12:56:13,298 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.zh.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.zh.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/zh_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 32
+	h_dim : 256
+	enc_n_layers : 3
+	dec_n_layers : 3
+	enc_n_heads : 8
+	dec_n_heads : 8
+	enc_dropout : 0.1
+	dec_dropout : 0.1
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0
+	epochs : 200
+	save_dir : ./saved_models
+	save_epochs : 5
+	early_stop : True
+	patience : 200
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2024-06-17 12:56:13,299 [DEBUG]: Config saved to file ./config.json
+2024-06-17 12:56:13,335 [DEBUG]: -----------read data-----------
+2024-06-17 12:56:13,793 [DEBUG]: dataset/train.zh.token and dataset/train.en.token has data 169337
+2024-06-17 12:56:13,793 [DEBUG]: -----------preprocess data-----------
+2024-06-17 12:56:14,764 [DEBUG]: -----------read data-----------
+2024-06-17 12:56:14,771 [DEBUG]: dataset/val.zh.token and dataset/val.en.token has data 8000
+2024-06-17 12:56:14,771 [DEBUG]: -----------preprocess data-----------
+2024-06-17 12:58:19,492 [DEBUG]: start validation
+2024-06-17 12:58:21,229 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 13:00:26,942 [DEBUG]: start validation
+2024-06-17 13:00:28,345 [DEBUG]: EarlyStopping counter:1 out of 200
+2024-06-17 13:02:34,374 [DEBUG]: start validation
+2024-06-17 13:02:35,805 [DEBUG]: EarlyStopping counter:2 out of 200
+2024-06-17 13:04:42,326 [DEBUG]: start validation
+2024-06-17 13:04:43,702 [DEBUG]: EarlyStopping counter:3 out of 200
+2024-06-17 13:06:48,499 [DEBUG]: start validation
+2024-06-17 13:06:49,915 [DEBUG]: EarlyStopping counter:4 out of 200
+2024-06-17 13:08:55,797 [DEBUG]: start validation
+2024-06-17 13:08:57,103 [DEBUG]: EarlyStopping counter:5 out of 200
+2024-06-17 13:11:01,785 [DEBUG]: start validation
+2024-06-17 13:11:03,213 [DEBUG]: EarlyStopping counter:6 out of 200
+2024-06-17 13:13:08,265 [DEBUG]: start validation
+2024-06-17 13:13:09,708 [DEBUG]: EarlyStopping counter:7 out of 200
+2024-06-17 13:15:12,289 [DEBUG]: start validation
+2024-06-17 13:15:13,645 [DEBUG]: EarlyStopping counter:8 out of 200
+2024-06-17 13:17:13,637 [DEBUG]: start validation
+2024-06-17 13:17:14,990 [DEBUG]: EarlyStopping counter:9 out of 200
+2024-06-17 13:19:13,567 [DEBUG]: start validation
+2024-06-17 13:19:14,979 [DEBUG]: EarlyStopping counter:10 out of 200
+2024-06-17 13:21:15,046 [DEBUG]: start validation
+2024-06-17 13:21:16,316 [DEBUG]: EarlyStopping counter:11 out of 200
+2024-06-17 13:23:14,706 [DEBUG]: start validation
+2024-06-17 13:23:16,069 [DEBUG]: EarlyStopping counter:12 out of 200
+2024-06-17 13:25:15,633 [DEBUG]: start validation
+2024-06-17 13:25:16,904 [DEBUG]: EarlyStopping counter:13 out of 200
+2024-06-17 13:27:15,346 [DEBUG]: start validation
+2024-06-17 13:27:16,602 [DEBUG]: EarlyStopping counter:14 out of 200
+2024-06-17 13:29:15,068 [DEBUG]: start validation
+2024-06-17 13:29:16,436 [DEBUG]: EarlyStopping counter:15 out of 200
+2024-06-17 13:31:14,674 [DEBUG]: start validation
+2024-06-17 13:31:16,116 [DEBUG]: EarlyStopping counter:16 out of 200
+2024-06-17 13:33:14,540 [DEBUG]: start validation
+2024-06-17 13:33:15,869 [DEBUG]: EarlyStopping counter:17 out of 200
+2024-06-17 13:35:14,672 [DEBUG]: start validation
+2024-06-17 13:35:15,990 [DEBUG]: EarlyStopping counter:18 out of 200
+2024-06-17 13:37:14,058 [DEBUG]: start validation
+2024-06-17 13:37:15,354 [DEBUG]: EarlyStopping counter:19 out of 200
+2024-06-17 13:39:14,208 [DEBUG]: start validation
+2024-06-17 13:39:15,606 [DEBUG]: EarlyStopping counter:20 out of 200
+2024-06-17 13:41:14,436 [DEBUG]: start validation
+2024-06-17 13:41:15,771 [DEBUG]: EarlyStopping counter:21 out of 200
+2024-06-17 13:43:13,986 [DEBUG]: start validation
+2024-06-17 13:43:15,254 [DEBUG]: EarlyStopping counter:22 out of 200
+2024-06-17 13:45:14,054 [DEBUG]: start validation
+2024-06-17 13:45:15,339 [DEBUG]: EarlyStopping counter:23 out of 200
+2024-06-17 13:47:13,972 [DEBUG]: start validation
+2024-06-17 13:47:15,424 [DEBUG]: EarlyStopping counter:24 out of 200
+2024-06-17 13:49:12,767 [DEBUG]: start validation
+2024-06-17 13:49:14,278 [DEBUG]: EarlyStopping counter:25 out of 200
+2024-06-17 13:51:13,827 [DEBUG]: start validation
+2024-06-17 13:51:15,103 [DEBUG]: EarlyStopping counter:26 out of 200
+2024-06-17 13:53:14,062 [DEBUG]: start validation
+2024-06-17 13:53:15,410 [DEBUG]: EarlyStopping counter:27 out of 200
+2024-06-17 13:55:13,412 [DEBUG]: start validation
+2024-06-17 13:55:14,901 [DEBUG]: EarlyStopping counter:28 out of 200
+2024-06-17 13:57:13,861 [DEBUG]: start validation
+2024-06-17 13:57:15,106 [DEBUG]: EarlyStopping counter:29 out of 200
+2024-06-17 13:59:12,547 [DEBUG]: start validation
+2024-06-17 13:59:13,887 [DEBUG]: EarlyStopping counter:30 out of 200
+2024-06-17 14:01:12,132 [DEBUG]: start validation
+2024-06-17 14:01:13,702 [DEBUG]: EarlyStopping counter:31 out of 200
+2024-06-17 14:03:13,476 [DEBUG]: start validation
+2024-06-17 14:03:14,835 [DEBUG]: EarlyStopping counter:32 out of 200
+2024-06-17 14:05:13,715 [DEBUG]: start validation
+2024-06-17 14:05:15,093 [DEBUG]: EarlyStopping counter:33 out of 200
+2024-06-17 14:07:13,031 [DEBUG]: start validation
+2024-06-17 14:07:14,595 [DEBUG]: EarlyStopping counter:34 out of 200
+2024-06-17 14:09:13,485 [DEBUG]: start validation
+2024-06-17 14:09:14,843 [DEBUG]: EarlyStopping counter:35 out of 200
+2024-06-17 14:11:13,862 [DEBUG]: start validation
+2024-06-17 14:11:15,231 [DEBUG]: EarlyStopping counter:36 out of 200
+2024-06-17 14:13:13,229 [DEBUG]: start validation
+2024-06-17 14:13:14,637 [DEBUG]: EarlyStopping counter:37 out of 200
+2024-06-17 14:15:14,164 [DEBUG]: start validation
+2024-06-17 14:15:15,596 [DEBUG]: EarlyStopping counter:38 out of 200
+2024-06-17 14:17:14,736 [DEBUG]: start validation
+2024-06-17 14:17:16,451 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 14:19:14,166 [DEBUG]: start validation
+2024-06-17 14:19:15,667 [DEBUG]: EarlyStopping counter:1 out of 200
+2024-06-17 14:21:15,568 [DEBUG]: start validation
+2024-06-17 14:21:16,954 [DEBUG]: EarlyStopping counter:2 out of 200
+2024-06-17 14:23:15,728 [DEBUG]: start validation
+2024-06-17 14:23:17,032 [DEBUG]: EarlyStopping counter:3 out of 200
+2024-06-17 14:25:15,109 [DEBUG]: start validation
+2024-06-17 14:25:16,535 [DEBUG]: EarlyStopping counter:4 out of 200
+2024-06-17 14:27:15,266 [DEBUG]: start validation
+2024-06-17 14:27:16,524 [DEBUG]: EarlyStopping counter:5 out of 200
+2024-06-17 14:29:15,393 [DEBUG]: start validation
+2024-06-17 14:29:16,806 [DEBUG]: EarlyStopping counter:6 out of 200
+2024-06-17 14:31:15,595 [DEBUG]: start validation
+2024-06-17 14:31:17,158 [DEBUG]: EarlyStopping counter:7 out of 200
+2024-06-17 14:33:15,777 [DEBUG]: start validation
+2024-06-17 14:33:17,130 [DEBUG]: EarlyStopping counter:8 out of 200
+2024-06-17 14:35:15,401 [DEBUG]: start validation
+2024-06-17 14:35:16,739 [DEBUG]: EarlyStopping counter:9 out of 200
+2024-06-17 14:37:15,006 [DEBUG]: start validation
+2024-06-17 14:37:16,442 [DEBUG]: EarlyStopping counter:10 out of 200
+2024-06-17 14:39:14,718 [DEBUG]: start validation
+2024-06-17 14:39:15,972 [DEBUG]: EarlyStopping counter:11 out of 200
+2024-06-17 14:41:14,612 [DEBUG]: start validation
+2024-06-17 14:41:15,985 [DEBUG]: EarlyStopping counter:12 out of 200
+2024-06-17 14:43:14,843 [DEBUG]: start validation
+2024-06-17 14:43:16,271 [DEBUG]: EarlyStopping counter:13 out of 200
+2024-06-17 14:45:14,968 [DEBUG]: start validation
+2024-06-17 14:45:16,292 [DEBUG]: EarlyStopping counter:14 out of 200
+2024-06-17 14:47:14,072 [DEBUG]: start validation
+2024-06-17 14:47:15,661 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 14:49:14,258 [DEBUG]: start validation
+2024-06-17 14:49:15,594 [DEBUG]: EarlyStopping counter:1 out of 200
+2024-06-17 14:51:14,251 [DEBUG]: start validation
+2024-06-17 14:51:15,591 [DEBUG]: EarlyStopping counter:2 out of 200
+2024-06-17 14:53:14,606 [DEBUG]: start validation
+2024-06-17 14:53:15,838 [DEBUG]: EarlyStopping counter:3 out of 200
+2024-06-17 14:55:22,336 [DEBUG]: start validation
+2024-06-17 14:55:23,690 [DEBUG]: EarlyStopping counter:4 out of 200
+2024-06-17 14:57:30,055 [DEBUG]: start validation
+2024-06-17 14:57:31,449 [DEBUG]: EarlyStopping counter:5 out of 200
+2024-06-17 14:59:37,370 [DEBUG]: start validation
+2024-06-17 14:59:38,746 [DEBUG]: EarlyStopping counter:6 out of 200
+2024-06-17 15:01:44,828 [DEBUG]: start validation
+2024-06-17 15:01:46,183 [DEBUG]: EarlyStopping counter:7 out of 200
+2024-06-17 15:03:51,938 [DEBUG]: start validation
+2024-06-17 15:03:53,310 [DEBUG]: EarlyStopping counter:8 out of 200
+2024-06-17 15:05:58,234 [DEBUG]: start validation
+2024-06-17 15:05:59,512 [DEBUG]: EarlyStopping counter:9 out of 200
+2024-06-17 15:08:04,545 [DEBUG]: start validation
+2024-06-17 15:08:05,934 [DEBUG]: EarlyStopping counter:10 out of 200
+2024-06-17 15:10:11,003 [DEBUG]: start validation
+2024-06-17 15:10:12,343 [DEBUG]: EarlyStopping counter:11 out of 200
+2024-06-17 15:12:26,758 [DEBUG]: start validation
+2024-06-17 15:12:28,174 [DEBUG]: EarlyStopping counter:12 out of 200
+2024-06-17 15:14:32,726 [DEBUG]: start validation
+2024-06-17 15:14:34,112 [DEBUG]: EarlyStopping counter:13 out of 200
+2024-06-17 15:16:37,375 [DEBUG]: start validation
+2024-06-17 15:16:38,701 [DEBUG]: EarlyStopping counter:14 out of 200
+2024-06-17 15:18:43,092 [DEBUG]: start validation
+2024-06-17 15:18:44,474 [DEBUG]: EarlyStopping counter:15 out of 200
+2024-06-17 15:21:00,711 [DEBUG]: start validation
+2024-06-17 15:21:02,038 [DEBUG]: EarlyStopping counter:16 out of 200
+2024-06-17 15:23:02,890 [DEBUG]: start validation
+2024-06-17 15:23:04,244 [DEBUG]: EarlyStopping counter:17 out of 200
+2024-06-17 15:25:04,793 [DEBUG]: start validation
+2024-06-17 15:25:06,113 [DEBUG]: EarlyStopping counter:18 out of 200
+2024-06-17 15:27:08,039 [DEBUG]: start validation
+2024-06-17 15:27:09,289 [DEBUG]: EarlyStopping counter:19 out of 200
+2024-06-17 15:29:10,127 [DEBUG]: start validation
+2024-06-17 15:29:11,511 [DEBUG]: EarlyStopping counter:20 out of 200
+2024-06-17 15:31:20,956 [DEBUG]: start validation
+2024-06-17 15:31:22,308 [DEBUG]: EarlyStopping counter:21 out of 200
+2024-06-17 15:33:30,134 [DEBUG]: start validation
+2024-06-17 15:33:31,456 [DEBUG]: EarlyStopping counter:22 out of 200
+2024-06-17 15:35:33,675 [DEBUG]: start validation
+2024-06-17 15:35:34,922 [DEBUG]: EarlyStopping counter:23 out of 200
+2024-06-17 15:37:43,200 [DEBUG]: start validation
+2024-06-17 15:37:44,429 [DEBUG]: EarlyStopping counter:24 out of 200
+2024-06-17 15:39:51,033 [DEBUG]: start validation
+2024-06-17 15:39:52,281 [DEBUG]: EarlyStopping counter:25 out of 200
+2024-06-17 15:41:53,661 [DEBUG]: start validation
+2024-06-17 15:41:55,306 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 15:43:59,440 [DEBUG]: start validation
+2024-06-17 15:44:00,775 [DEBUG]: EarlyStopping counter:1 out of 200
+2024-06-17 15:46:02,669 [DEBUG]: start validation
+2024-06-17 15:46:04,014 [DEBUG]: EarlyStopping counter:2 out of 200
+2024-06-17 15:48:07,741 [DEBUG]: start validation
+2024-06-17 15:48:09,031 [DEBUG]: EarlyStopping counter:3 out of 200
+2024-06-17 15:50:10,649 [DEBUG]: start validation
+2024-06-17 15:50:12,084 [DEBUG]: EarlyStopping counter:4 out of 200
+2024-06-17 15:52:13,764 [DEBUG]: start validation
+2024-06-17 15:52:14,988 [DEBUG]: EarlyStopping counter:5 out of 200
+2024-06-17 15:54:20,990 [DEBUG]: start validation
+2024-06-17 15:54:22,214 [DEBUG]: EarlyStopping counter:6 out of 200
+2024-06-17 15:56:37,920 [DEBUG]: start validation
+2024-06-17 15:56:39,207 [DEBUG]: EarlyStopping counter:7 out of 200
+2024-06-17 15:58:48,911 [DEBUG]: start validation
+2024-06-17 15:58:50,081 [DEBUG]: EarlyStopping counter:8 out of 200
+2024-06-17 16:00:54,736 [DEBUG]: start validation
+2024-06-17 16:00:56,185 [DEBUG]: EarlyStopping counter:9 out of 200
+2024-06-17 16:03:07,518 [DEBUG]: start validation
+2024-06-17 16:03:08,816 [DEBUG]: EarlyStopping counter:10 out of 200
+2024-06-17 16:05:29,609 [DEBUG]: start validation
+2024-06-17 16:05:30,874 [DEBUG]: EarlyStopping counter:11 out of 200
+2024-06-17 16:07:43,342 [DEBUG]: start validation
+2024-06-17 16:07:44,584 [DEBUG]: EarlyStopping counter:12 out of 200
+2024-06-17 16:09:57,803 [DEBUG]: start validation
+2024-06-17 16:09:59,170 [DEBUG]: EarlyStopping counter:13 out of 200
+2024-06-17 16:12:10,696 [DEBUG]: start validation
+2024-06-17 16:12:11,913 [DEBUG]: EarlyStopping counter:14 out of 200
+2024-06-17 16:14:22,887 [DEBUG]: start validation
+2024-06-17 16:14:24,328 [DEBUG]: EarlyStopping counter:15 out of 200
+2024-06-17 16:16:37,610 [DEBUG]: start validation
+2024-06-17 16:16:38,932 [DEBUG]: EarlyStopping counter:16 out of 200
+2024-06-17 16:18:58,348 [DEBUG]: start validation
+2024-06-17 16:18:59,682 [DEBUG]: EarlyStopping counter:17 out of 200
+2024-06-17 16:21:15,758 [DEBUG]: start validation
+2024-06-17 16:21:17,073 [DEBUG]: EarlyStopping counter:18 out of 200
+2024-06-17 16:23:29,325 [DEBUG]: start validation
+2024-06-17 16:23:31,696 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 16:25:41,809 [DEBUG]: start validation
+2024-06-17 16:25:43,038 [DEBUG]: EarlyStopping counter:1 out of 200
+2024-06-17 16:27:44,472 [DEBUG]: start validation
+2024-06-17 16:27:45,842 [DEBUG]: EarlyStopping counter:2 out of 200
+2024-06-17 16:29:45,241 [DEBUG]: start validation
+2024-06-17 16:29:46,458 [DEBUG]: EarlyStopping counter:3 out of 200
+2024-06-17 16:31:45,914 [DEBUG]: start validation
+2024-06-17 16:31:47,189 [DEBUG]: EarlyStopping counter:4 out of 200
+2024-06-17 16:33:49,151 [DEBUG]: start validation
+2024-06-17 16:33:50,410 [DEBUG]: EarlyStopping counter:5 out of 200
+2024-06-17 16:35:49,947 [DEBUG]: start validation
+2024-06-17 16:35:51,151 [DEBUG]: EarlyStopping counter:6 out of 200
+2024-06-17 16:37:49,981 [DEBUG]: start validation
+2024-06-17 16:37:51,242 [DEBUG]: EarlyStopping counter:7 out of 200
+2024-06-17 16:39:52,247 [DEBUG]: start validation
+2024-06-17 16:39:53,499 [DEBUG]: EarlyStopping counter:8 out of 200
+2024-06-17 16:41:53,218 [DEBUG]: start validation
+2024-06-17 16:41:54,520 [DEBUG]: EarlyStopping counter:9 out of 200
+2024-06-17 16:43:53,917 [DEBUG]: start validation
+2024-06-17 16:43:55,178 [DEBUG]: EarlyStopping counter:10 out of 200
+2024-06-17 16:45:56,953 [DEBUG]: start validation
+2024-06-17 16:45:58,192 [DEBUG]: EarlyStopping counter:11 out of 200
+2024-06-17 16:47:58,316 [DEBUG]: start validation
+2024-06-17 16:47:59,534 [DEBUG]: EarlyStopping counter:12 out of 200
+2024-06-17 16:49:58,304 [DEBUG]: start validation
+2024-06-17 16:49:59,584 [DEBUG]: EarlyStopping counter:13 out of 200
+2024-06-17 16:52:00,462 [DEBUG]: start validation
+2024-06-17 16:52:01,694 [DEBUG]: EarlyStopping counter:14 out of 200
+2024-06-17 16:54:00,556 [DEBUG]: start validation
+2024-06-17 16:54:01,819 [DEBUG]: EarlyStopping counter:15 out of 200
+2024-06-17 16:56:02,335 [DEBUG]: start validation
+2024-06-17 16:56:03,957 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 16:58:06,837 [DEBUG]: start validation
+2024-06-17 16:58:08,403 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-17 17:00:07,445 [DEBUG]: start validation
+2024-06-17 17:00:09,260 [DEBUG]: EarlyStopping counter:1 out of 200
+2024-06-17 17:02:11,841 [DEBUG]: start validation
+2024-06-17 17:02:13,030 [DEBUG]: EarlyStopping counter:2 out of 200
+2024-06-17 17:04:13,424 [DEBUG]: start validation
+2024-06-17 17:04:14,677 [DEBUG]: EarlyStopping counter:3 out of 200
+2024-06-17 17:06:14,480 [DEBUG]: start validation
+2024-06-17 17:06:15,692 [DEBUG]: EarlyStopping counter:4 out of 200
+2024-06-17 17:08:16,043 [DEBUG]: start validation
+2024-06-17 17:08:17,389 [DEBUG]: EarlyStopping counter:5 out of 200
+2024-06-17 17:10:18,815 [DEBUG]: start validation
+2024-06-17 17:10:20,092 [DEBUG]: EarlyStopping counter:6 out of 200
+2024-06-17 17:12:18,655 [DEBUG]: start validation
+2024-06-17 17:12:19,865 [DEBUG]: EarlyStopping counter:7 out of 200
+2024-06-17 17:14:20,284 [DEBUG]: start validation
+2024-06-17 17:14:21,670 [DEBUG]: EarlyStopping counter:8 out of 200
+2024-06-17 17:16:23,494 [DEBUG]: start validation
+2024-06-17 17:16:24,670 [DEBUG]: EarlyStopping counter:9 out of 200
+2024-06-17 17:18:23,391 [DEBUG]: start validation
+2024-06-17 17:18:24,699 [DEBUG]: EarlyStopping counter:10 out of 200
+2024-06-17 17:20:25,560 [DEBUG]: start validation
+2024-06-17 17:20:26,767 [DEBUG]: EarlyStopping counter:11 out of 200
+2024-06-17 17:22:26,887 [DEBUG]: start validation
+2024-06-17 17:22:28,063 [DEBUG]: EarlyStopping counter:12 out of 200
+2024-06-17 17:24:26,499 [DEBUG]: start validation
+2024-06-17 17:24:27,820 [DEBUG]: EarlyStopping counter:13 out of 200
+2024-06-17 17:26:28,613 [DEBUG]: start validation
+2024-06-17 17:26:30,144 [DEBUG]: EarlyStopping counter:14 out of 200
+2024-06-17 17:28:30,684 [DEBUG]: start validation
+2024-06-17 17:28:31,920 [DEBUG]: EarlyStopping counter:15 out of 200
+2024-06-17 17:30:31,071 [DEBUG]: start validation
+2024-06-17 17:30:32,274 [DEBUG]: EarlyStopping counter:16 out of 200
+2024-06-17 17:32:33,123 [DEBUG]: start validation
+2024-06-17 17:32:34,495 [DEBUG]: EarlyStopping counter:17 out of 200
+2024-06-17 17:34:35,610 [DEBUG]: start validation
+2024-06-17 17:34:36,905 [DEBUG]: EarlyStopping counter:18 out of 200
+2024-06-17 17:36:36,260 [DEBUG]: start validation
+2024-06-17 17:36:37,489 [DEBUG]: EarlyStopping counter:19 out of 200
+2024-06-17 17:38:37,654 [DEBUG]: start validation
+2024-06-17 17:38:38,972 [DEBUG]: EarlyStopping counter:20 out of 200
+2024-06-17 17:40:39,851 [DEBUG]: start validation
+2024-06-17 17:40:41,064 [DEBUG]: EarlyStopping counter:21 out of 200
+2024-06-17 17:42:39,854 [DEBUG]: start validation
+2024-06-17 17:42:41,121 [DEBUG]: EarlyStopping counter:22 out of 200
+2024-06-17 17:44:42,709 [DEBUG]: start validation
+2024-06-17 17:44:44,165 [DEBUG]: EarlyStopping counter:23 out of 200
+2024-06-17 17:46:44,269 [DEBUG]: start validation
+2024-06-17 17:46:45,445 [DEBUG]: EarlyStopping counter:24 out of 200
+2024-06-17 17:48:43,785 [DEBUG]: start validation
+2024-06-17 17:48:45,006 [DEBUG]: EarlyStopping counter:25 out of 200
+2024-06-17 17:50:45,833 [DEBUG]: start validation
+2024-06-17 17:50:47,099 [DEBUG]: EarlyStopping counter:26 out of 200
+2024-06-17 17:52:46,856 [DEBUG]: start validation
+2024-06-17 17:52:48,146 [DEBUG]: EarlyStopping counter:27 out of 200
+2024-06-17 17:54:46,890 [DEBUG]: start validation
+2024-06-17 17:54:48,174 [DEBUG]: EarlyStopping counter:28 out of 200
+2024-06-17 17:56:48,424 [DEBUG]: start validation
+2024-06-17 17:56:49,726 [DEBUG]: EarlyStopping counter:29 out of 200
+2024-06-17 17:58:50,487 [DEBUG]: start validation
+2024-06-17 17:58:51,602 [DEBUG]: EarlyStopping counter:30 out of 200
+2024-06-17 18:00:50,658 [DEBUG]: start validation
+2024-06-17 18:00:51,814 [DEBUG]: EarlyStopping counter:31 out of 200
+2024-06-17 18:03:03,437 [DEBUG]: start validation
+2024-06-17 18:03:04,878 [DEBUG]: EarlyStopping counter:32 out of 200
+2024-06-17 18:05:20,883 [DEBUG]: start validation
+2024-06-17 18:05:22,266 [DEBUG]: EarlyStopping counter:33 out of 200
+2024-06-17 18:07:37,459 [DEBUG]: start validation
+2024-06-17 18:07:38,798 [DEBUG]: EarlyStopping counter:34 out of 200
+2024-06-17 18:09:53,423 [DEBUG]: start validation
+2024-06-17 18:09:54,726 [DEBUG]: EarlyStopping counter:35 out of 200
+2024-06-17 18:12:09,825 [DEBUG]: start validation
+2024-06-17 18:12:11,115 [DEBUG]: EarlyStopping counter:36 out of 200
+2024-06-17 18:14:20,874 [DEBUG]: start validation
+2024-06-17 18:14:22,266 [DEBUG]: EarlyStopping counter:37 out of 200
+2024-06-17 18:16:34,558 [DEBUG]: start validation
+2024-06-17 18:16:35,947 [DEBUG]: EarlyStopping counter:38 out of 200
+2024-06-17 18:18:44,752 [DEBUG]: start validation
+2024-06-17 18:18:46,091 [DEBUG]: EarlyStopping counter:39 out of 200
+2024-06-17 18:20:58,212 [DEBUG]: start validation
+2024-06-17 18:20:59,527 [DEBUG]: EarlyStopping counter:40 out of 200
+2024-06-17 18:23:01,062 [DEBUG]: start validation
+2024-06-17 18:23:02,315 [DEBUG]: EarlyStopping counter:41 out of 200
+2024-06-17 18:25:01,513 [DEBUG]: start validation
+2024-06-17 18:25:03,017 [DEBUG]: EarlyStopping counter:42 out of 200
+2024-06-17 18:27:02,655 [DEBUG]: start validation
+2024-06-17 18:27:03,888 [DEBUG]: EarlyStopping counter:43 out of 200
+2024-06-17 18:29:02,651 [DEBUG]: start validation
+2024-06-17 18:29:03,966 [DEBUG]: EarlyStopping counter:44 out of 200
+2024-06-17 18:31:02,257 [DEBUG]: start validation
+2024-06-17 18:31:03,679 [DEBUG]: EarlyStopping counter:45 out of 200
+2024-06-17 18:33:04,487 [DEBUG]: start validation
+2024-06-17 18:33:05,809 [DEBUG]: EarlyStopping counter:46 out of 200
+2024-06-17 18:35:05,818 [DEBUG]: start validation
+2024-06-17 18:35:07,012 [DEBUG]: EarlyStopping counter:47 out of 200
+2024-06-17 18:37:04,627 [DEBUG]: start validation
+2024-06-17 18:37:05,989 [DEBUG]: EarlyStopping counter:48 out of 200
+2024-06-17 18:39:04,456 [DEBUG]: start validation
+2024-06-17 18:39:05,836 [DEBUG]: EarlyStopping counter:49 out of 200
+2024-06-17 18:41:04,534 [DEBUG]: start validation
+2024-06-17 18:41:05,762 [DEBUG]: EarlyStopping counter:50 out of 200
+2024-06-17 18:43:03,215 [DEBUG]: start validation
+2024-06-17 18:43:04,497 [DEBUG]: EarlyStopping counter:51 out of 200
+2024-06-17 18:45:04,199 [DEBUG]: start validation
+2024-06-17 18:45:05,620 [DEBUG]: EarlyStopping counter:52 out of 200
+2024-06-17 18:47:05,271 [DEBUG]: start validation
+2024-06-17 18:47:06,561 [DEBUG]: EarlyStopping counter:53 out of 200
+2024-06-17 18:49:05,021 [DEBUG]: start validation
+2024-06-17 18:49:06,556 [DEBUG]: EarlyStopping counter:54 out of 200
+2024-06-17 18:51:06,937 [DEBUG]: start validation
+2024-06-17 18:51:08,228 [DEBUG]: EarlyStopping counter:55 out of 200
+2024-06-17 18:53:07,013 [DEBUG]: start validation
+2024-06-17 18:53:08,236 [DEBUG]: EarlyStopping counter:56 out of 200
+2024-06-17 18:55:06,249 [DEBUG]: start validation
+2024-06-17 18:55:07,812 [DEBUG]: EarlyStopping counter:57 out of 200
+2024-06-17 18:57:07,109 [DEBUG]: start validation
+2024-06-17 18:57:08,315 [DEBUG]: EarlyStopping counter:58 out of 200
+2024-06-17 18:59:07,644 [DEBUG]: start validation
+2024-06-17 18:59:09,000 [DEBUG]: EarlyStopping counter:59 out of 200
+2024-06-17 19:01:07,220 [DEBUG]: start validation
+2024-06-17 19:01:08,484 [DEBUG]: EarlyStopping counter:60 out of 200
+2024-06-17 19:03:07,665 [DEBUG]: start validation
+2024-06-17 19:03:09,075 [DEBUG]: EarlyStopping counter:61 out of 200
+2024-06-17 19:05:08,041 [DEBUG]: start validation
+2024-06-17 19:05:09,323 [DEBUG]: EarlyStopping counter:62 out of 200
+2024-06-17 19:07:08,557 [DEBUG]: start validation
+2024-06-17 19:07:10,030 [DEBUG]: EarlyStopping counter:63 out of 200
+2024-06-17 19:09:09,929 [DEBUG]: start validation
+2024-06-17 19:09:11,240 [DEBUG]: EarlyStopping counter:64 out of 200
+2024-06-17 19:11:10,645 [DEBUG]: start validation
+2024-06-17 19:11:11,871 [DEBUG]: EarlyStopping counter:65 out of 200
+2024-06-17 19:13:09,849 [DEBUG]: start validation
+2024-06-17 19:13:11,339 [DEBUG]: EarlyStopping counter:66 out of 200
+2024-06-17 19:15:11,071 [DEBUG]: start validation
+2024-06-17 19:15:12,292 [DEBUG]: EarlyStopping counter:67 out of 200
+2024-06-17 19:17:12,619 [DEBUG]: start validation
+2024-06-17 19:17:13,887 [DEBUG]: EarlyStopping counter:68 out of 200
+2024-06-17 19:19:11,617 [DEBUG]: start validation
+2024-06-17 19:19:12,939 [DEBUG]: EarlyStopping counter:69 out of 200
+2024-06-17 19:21:14,037 [DEBUG]: start validation
+2024-06-17 19:21:15,220 [DEBUG]: EarlyStopping counter:70 out of 200
+2024-06-17 19:23:14,527 [DEBUG]: start validation
+2024-06-17 19:23:15,834 [DEBUG]: EarlyStopping counter:71 out of 200
+2024-06-17 19:25:14,028 [DEBUG]: start validation
+2024-06-17 19:25:15,433 [DEBUG]: EarlyStopping counter:72 out of 200
+2024-06-17 19:27:16,350 [DEBUG]: start validation
+2024-06-17 19:27:17,596 [DEBUG]: EarlyStopping counter:73 out of 200
+2024-06-17 19:29:16,907 [DEBUG]: start validation
+2024-06-17 19:29:18,111 [DEBUG]: EarlyStopping counter:74 out of 200
+2024-06-17 19:31:17,609 [DEBUG]: start validation
+2024-06-17 19:31:19,028 [DEBUG]: EarlyStopping counter:75 out of 200
+2024-06-17 19:33:19,779 [DEBUG]: start validation
+2024-06-17 19:33:21,214 [DEBUG]: EarlyStopping counter:76 out of 200
+2024-06-17 19:35:20,924 [DEBUG]: start validation
+2024-06-17 19:35:22,119 [DEBUG]: EarlyStopping counter:77 out of 200
+2024-06-17 19:37:21,598 [DEBUG]: start validation
+2024-06-17 19:37:22,773 [DEBUG]: EarlyStopping counter:78 out of 200
+2024-06-17 19:39:21,485 [DEBUG]: start validation
+2024-06-17 19:39:22,729 [DEBUG]: EarlyStopping counter:79 out of 200
+2024-06-17 19:41:23,112 [DEBUG]: start validation
+2024-06-17 19:41:24,398 [DEBUG]: EarlyStopping counter:80 out of 200
+2024-06-17 19:43:22,600 [DEBUG]: start validation
+2024-06-17 19:43:23,908 [DEBUG]: EarlyStopping counter:81 out of 200
+2024-06-17 19:45:32,831 [DEBUG]: start validation
+2024-06-17 19:45:34,079 [DEBUG]: EarlyStopping counter:82 out of 200
+2024-06-17 19:47:47,803 [DEBUG]: start validation
+2024-06-17 19:47:49,100 [DEBUG]: EarlyStopping counter:83 out of 200
+2024-06-17 20:01:18,230 [DEBUG]: Config loaded from file config.json
+2024-06-17 20:01:32,165 [DEBUG]: Config loaded from file config.json
+2024-06-17 20:02:41,153 [DEBUG]: Config loaded from file config.json
+2024-06-17 20:07:44,328 [DEBUG]: Config loaded from file config.json
+2024-06-19 14:20:01,876 [DEBUG]: Config loaded from file config.json
+2024-06-19 14:21:25,785 [DEBUG]: Config loaded from file config.json
+2024-06-19 14:23:02,194 [DEBUG]: 
+Running with the following configs:
+	src_train_data : dataset/train.zh.token
+	trg_train_data : dataset/train.en.token
+	src_valid_data : dataset/val.zh.token
+	trg_valid_data : dataset/val.en.token
+	src_vocab : dataset/zh_vocab.pkl
+	trg_vocab : dataset/en_vocab.pkl
+	shuffle : True
+	batch_size : 16
+	h_dim : 1024
+	enc_n_layers : 3
+	dec_n_layers : 3
+	enc_n_heads : 8
+	dec_n_heads : 8
+	enc_dropout : 0.1
+	dec_dropout : 0.1
+	enc_pf_dim : 512
+	dec_pf_dim : 512
+	lr : 0.0005
+	optimizer : adam
+	l2 : 0.0
+	epochs : 5
+	save_dir : ./saved_models
+	save_epochs : 5
+	early_stop : True
+	patience : 200
+	resume : False
+	resume_path : ./saved_models/model_best.pt
+	log_step : 20
+	cuda : True
+	config_file : ./config.json
+	seed : 1234
+
+
+2024-06-19 14:23:02,195 [DEBUG]: Config saved to file ./config.json
+2024-06-19 14:23:02,232 [DEBUG]: -----------read data-----------
+2024-06-19 14:23:02,698 [DEBUG]: dataset/train.zh.token and dataset/train.en.token has data 169337
+2024-06-19 14:23:02,698 [DEBUG]: -----------preprocess data-----------
+2024-06-19 14:23:03,910 [DEBUG]: -----------read data-----------
+2024-06-19 14:23:03,918 [DEBUG]: dataset/val.zh.token and dataset/val.en.token has data 8000
+2024-06-19 14:23:03,918 [DEBUG]: -----------preprocess data-----------
+2024-06-19 14:31:10,891 [DEBUG]: start validation
+2024-06-19 14:31:14,823 [DEBUG]: Saving current best: ./saved_models/model_best.pt...
+2024-06-19 14:32:05,039 [DEBUG]: Config loaded from file config.json
+2024-06-19 14:55:39,888 [DEBUG]: Config loaded from file config.json
+2024-06-19 14:56:11,501 [DEBUG]: Config loaded from file config.json
+2024-06-19 15:07:19,658 [DEBUG]: Config loaded from file config.json
